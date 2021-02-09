@@ -1,4 +1,4 @@
-# Virtual Agency Boostrap
+# Shaq Bot Boostrap
 
 TODO: Service description
 

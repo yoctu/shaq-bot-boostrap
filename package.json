@@ -1,7 +1,7 @@
 {
-  "name": "virtual-agency-boostrap",
+  "name": "shaq-bot-boostrap",
   "version": "1.0.0",
-  "description": "Bootstap your virtual agency!",
+  "description": "Bootstap your Shaq Bot!",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
