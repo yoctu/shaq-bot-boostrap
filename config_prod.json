@@ -1,0 +1,16 @@
+{
+  "shaq_api": {
+    "base_url": "https://%USERCODE%.shaq.eu.yoctu.solutions/api",
+    "ws": {
+      "reconnectionDelay": 5000,
+      "reconnectionDelayMax": 60000,
+      "sockets": {
+        "url": "https://shaq.redspher.com/shaq",
+        "authorization": "Basic c2hpcHBlcmJvdEByZWRzcGhlci5jb206YzZkYTdlMDEtNWNkMS00ZTQ2LWEwMzctMTIwMTFkOTJmNDU5"
+      }
+    }
+  },
+  "sematext": {
+    "base_url": "https://logsene-receiver.sematext.com/3a87092c-c9ef-44ea-b9ad-9371469942fc/audit/"
+  }
+}

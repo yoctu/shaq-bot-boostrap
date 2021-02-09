@@ -1,0 +1,16 @@
+{
+  "name": "virtual-agency-boostrap",
+  "version": "1.0.0",
+  "description": "Bootstap your virtual agency!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "vsi@yoctu.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "node-red": "*",
+    "socket.io": "^2.3.0"
+  }
+}
