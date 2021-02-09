@@ -1,16 +1,12 @@
 {
   "shaq_api": {
-    "base_url": "https://%USERCODE%.shaq.us.yoctu.solutions/api",
+    "base_url": "https://%USERCODE%.shaq.us.yoctu.solutions",
     "ws": {
       "reconnectionDelay": 5000,
-      "reconnectionDelayMax": 60000,
-      "sockets": {
-        "url": "https://shaq.test.redspher.com/shaq",
-        "authorization": "Basic c2hpcHBlcmJvdEByZWRzcGhlci5jb206MzFlMWJjNzMtMDRjNi00MTFkLTlhMzItODIyNzc2MzQ1NWNl"
-      }
+      "reconnectionDelayMax": 60000
     }
   },
   "sematext": {
-    "base_url": "https://logsene-receiver.sematext.com/ce6d866f-1c0e-4986-974d-0aecd6763a16/audit/"
+    "base_url": "https://logsene-receiver.sematext.com"
   }
 }

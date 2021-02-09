@@ -6,7 +6,7 @@ TODO: Service description
 
 1. Clone the project
 2. Install dependencies: `npm install && cd nodered && npm install && cd ..`
-3. Run: `NODE_ENV='dev' INSTANCES='SHAQID' PORT=1880 npm start`
+3. Run: `NODE_ENV='dev' INSTANCES='SHAQID' CREDENTIAL="..." SEMATEXT="..." PORT=1880 npm start`
 4. Go Node-RED admin page with http://localhost:1880/nodered/ for breaking things (default access is admin/password)
 5. Use webservice with http://localhost:1880/api as base URL
 6. Have fun
@@ -23,6 +23,8 @@ There are another environment variables for setting project options. You can add
 
 * `NODE_ENV`: mandatory, the configuration environment. Can be `dev`, `test` and `prod`.
 * `INSTANCES`: mandatory, the list separate with comma of Shaq instance code to listen on.
+* `CREDENTIAL`: mandatory, the list separate with comma of Shaq instance code base64 credential to listen on.
+* `SEMATEXT`: mandatory, the Sematext log ID.
 * `PORT`: the TCP port that service listen. `80` by default.
 * `DISABLE_EDITOR`: Set to `1` disable the Node-RED editor, `0` to enable. `0` by default.
 * `ENABLE_PROJECT`: Set to `1` enable project in the Node-RED instance, `0` to disable. `0` by default.
@@ -39,7 +41,7 @@ TODO
 
 ## Endpoints definitions
 
-1. Run the project: `env NODE_ENV='dev' INSTANCES='SHAQID' PORT=1880 npm start`
+1. Run the project: `NODE_ENV='dev' INSTANCES='SHAQID' CREDENTIAL="..." SEMATEXT="..." PORT=1880 npm start`
 2. Open http://localhost:1880/api.html (TODO)
 
 ## How to contribute
@@ -54,7 +56,7 @@ We use Jest as testing framework and we maintain functional tests.
 
 For running tests:
 
-1. run the project with `env NODE_ENV='dev' INSTANCES='SHAQID' PORT=1880 npm start`
+1. run the project with `NODE_ENV='dev' INSTANCES='SHAQID' CREDENTIAL="..." SEMATEXT="..." PORT=1880 npm start`
 2. run tests with `env PORT=1880 npm run test`
 
 __All new features must have functionnal tests.__
@@ -62,7 +64,7 @@ __All new features must have functionnal tests.__
 ## Dockerfile
 
 1. build `docker build -t project_name .`
-2. run `docker run -e NODE_ENV='dev' -e PORT=1880 -e INSTANCES='SHAQID' -p 8080:1880 project_name:latest`
+2. run `docker run -e NODE_ENV='dev' -e PORT=1880 -e INSTANCES='SHAQID' -e CREDENTIAL="..." -e SEMATEXT="..." -p 8080:1880 project_name:latest`
 
 ## Hosting & Continous Deploiement
 
