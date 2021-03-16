@@ -24,11 +24,22 @@ There are another environment variables for setting project options. You can add
 * `NODE_ENV`: mandatory, the configuration environment. Can be `dev`, `test` and `prod`.
 * `INSTANCES`: mandatory, the list separate with comma of Shaq instance code to listen on.
 * `CREDENTIAL`: mandatory, the list separate with comma of Shaq instance code base64 credential to listen on.
-* `SEMATEXT`: mandatory, the Sematext log ID.
+* `SEMATEXT`: The Sematext log ID. If not present no log will be send to Sematext
 * `PORT`: the TCP port that service listen. `80` by default.
 * `DISABLE_EDITOR`: Set to `1` disable the Node-RED editor, `0` to enable. `0` by default.
 * `ENABLE_PROJECT`: Set to `1` enable project in the Node-RED instance, `0` to disable. `0` by default.
 * `PASSWORD`: Set the Nodre-RED editor password. Creadentials are `admin`/`password` by default.
+
+#### Auth0 integration
+
+If `AUTH0_DOMAIN` env variable is set so Auth0 integration will be use for user authentication:
+
+* `AUTH0_DOMAIN`: Auth0 application Domain
+* `AUTH0_CLIENTID`: Auth0 application Client ID
+* `AUTH0_CLIENTSECRET`: Auth0 application Client Secret
+* `AUTH0_CALLBACKURL`: Callback URL where Auth0 redirect the user to the nodered instance
+
+User must have the user_metadata `https://shaq.yoctu.solutions/nodered` set to `1` in order to be credential.
 
 ### Project configuration
 
