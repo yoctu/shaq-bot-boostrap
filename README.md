@@ -1,6 +1,6 @@
 # Shaq Bot Boostrap
 
-TODO: Service description
+Build your own Shaq bot with Nodered!
 
 ## Quick start
 
@@ -24,11 +24,12 @@ There are another environment variables for setting project options. You can add
 * `NODE_ENV`: mandatory, the configuration environment. Can be `dev`, `test` and `prod`.
 * `INSTANCES`: mandatory, the list separate with comma of Shaq instance code to listen on.
 * `CREDENTIAL`: mandatory, the list separate with comma of Shaq instance code base64 credential to listen on.
-* `SEMATEXT`: The Sematext log ID. If not present no log will be send to Sematext
+* `SHAQ_URL_PATTERN`: the Shaq URL pattern. default to `https://%USERCODE%.shaq.eu.yoctu.solutions`. The pattern can content a mask `%USERCODE%` that will be replace iteratively by the `INSTANCES` setting.
+* `SEMATEXT`: the Sematext base URL for logging purpose. If not present no log will be send to Sematext
 * `PORT`: the TCP port that service listen. `80` by default.
-* `DISABLE_EDITOR`: Set to `1` disable the Node-RED editor, `0` to enable. `0` by default.
-* `ENABLE_PROJECT`: Set to `1` enable project in the Node-RED instance, `0` to disable. `0` by default.
-* `PASSWORD`: Set the Nodre-RED editor password. Creadentials are `admin`/`password` by default.
+* `DISABLE_EDITOR`: set to `1` disable the Node-RED editor, `0` to enable. `0` by default.
+* `ENABLE_PROJECT`: set to `1` enable project in the Node-RED instance, `0` to disable. `0` by default.
+* `PASSWORD`: set the Nodre-RED editor password. Creadentials are `admin`/`password` by default.
 
 #### Auth0 integration
 
