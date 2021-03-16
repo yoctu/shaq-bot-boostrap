@@ -11,6 +11,7 @@
   "dependencies": {
     "express": "*",
     "node-red": "*",
+    "passport-auth0": "^1.4.0",
     "socket.io": "^2.3.0"
   }
 }
